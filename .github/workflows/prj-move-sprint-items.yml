@@ -5,8 +5,8 @@ on: workflow_dispatch
     # Runs "at 05:00, only on Monday" (see https://crontab.guru)
     #  - cron: '*/5 * * * *'
 
-permissions:
-  repository-projects: write
+  #permissions:
+  #repository-projects: write
 
 jobs:
   move-to-next-iteration:
@@ -16,7 +16,7 @@ jobs:
     steps:
     - uses: blombard/move-to-next-iteration@master
       with:
-        owner: orgs/smokifycc
+        owner: smokifycc
         number: 1
         token: ${{ secrets.GITHUB_TOKEN }}
         iteration-field: Sprint
