@@ -17,7 +17,7 @@ jobs:
     - uses: blombard/move-to-next-iteration@master
       with:
         owner: smokifycc
-        number: 1
+        number: 3
         token: ${{ secrets.GITHUB_TOKEN }}
         iteration-field: Sprint
         iteration: last
